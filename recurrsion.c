@@ -44,12 +44,13 @@ void tower_OfHanoi(int n , char source , char auxilary , char destination){
 
 int main(){
   
-  while(1){
+  
 
    printf("\nRecurrsion Menu\n");
    printf("1.Factorial.\n");
    printf("2.Fibonacci Series.\n");
-   printf("3.Exit.\n");
+   printf("3.Tower of Hanoi problem.\n");
+   printf("4.Exit.\n");
    int choice ;
    printf("Enter the choice from menu :");
    scanf("%d",&choice);
@@ -64,7 +65,7 @@ int main(){
       int factorial = Factorial(n);
       printf("The factorial of %d is : %d",n,factorial);
       break;
-      return 1;
+   
    }
    case 2:{
     int n;
@@ -73,16 +74,16 @@ int main(){
     printf("Fibonacci Series :");
     fibonacciSeries(n,0,1);
    
-   return 1;
-   break;
+ 
+ 
    }
    case 3 :{
       int n;
       printf("Enter the no. of disks : ");
       scanf("%d",&n);
 
-      tower_OfHanoi(n,'A','B','C','D');
-       return 1;
+      tower_OfHanoi(n,'A','B','C');
+      
        break;
    }
        
@@ -96,4 +97,5 @@ int main(){
 
    
 }
+
 }
